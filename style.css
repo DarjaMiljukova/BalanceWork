@@ -33,7 +33,6 @@ h2, p {
     color: white;
 }
 
-/* Boxed categories styling */
 .category-section {
     margin-bottom: 30px;
     padding: 20px;
@@ -49,7 +48,6 @@ h2, p {
     margin-bottom: 15px;
 }
 
-/* Product card styling */
 .shelf {
     display: inline-block;
     width: 200px;
@@ -78,7 +76,6 @@ h2, p {
     color: #555;
 }
 
-/* Enhanced "Add to Cart" button */
 .add-to-cart-btn {
     margin-top: 15px;
     padding: 10px 20px;
@@ -95,7 +92,6 @@ h2, p {
     background: linear-gradient(45deg, #0059b3, #003366);
 }
 
-/* Cart styling */
 .cart-container {
     position: fixed;
     top: 0;
@@ -143,7 +139,6 @@ h2, p {
     text-align: center;
 }
 
-/* Fancy cart buttons */
 .cart-item button {
     padding: 8px 12px;
     font-size: 14px;
@@ -160,7 +155,6 @@ h2, p {
     background: linear-gradient(45deg, #d90000, #b00000);
 }
 
-/* Checkout button styling */
 .cart-container .btn {
     margin-top: 20px;
     width: 100%;
@@ -179,7 +173,6 @@ h2, p {
     background: linear-gradient(45deg, #2e7d32, #1b5e20);
 }
 
-/* Checkout button styling */
 .cart-container .btn2 {
     margin-top: 20px;
     width: 100%;
@@ -198,7 +191,6 @@ h2, p {
     background: linear-gradient(45deg, #d90000, #b00000);
 }
 
-/* Form and button styles */
 .wrapper .form-container {
     width: 300px;
     margin: auto;
@@ -212,7 +204,6 @@ h2, p {
     margin-top: 20px;
 }
 
-/* Shared styles for login/signup forms */
 .form-singup form .field,
 .form-login form .field {
     height: 50px;
@@ -274,7 +265,6 @@ form .field input:focus::placeholder {
     text-decoration: underline;
 }
 
-/* Form submit button style */
 form .btn {
     height: 50px;
     width: 100%;
@@ -724,7 +714,7 @@ p {
 }
 
 .cardholder-name {
-    top: 80%;
+    top: 83%;
     left: 7%;
     width: 40%;
 }
@@ -742,28 +732,35 @@ p {
 }
 
 .expiration-date {
-    top: 69.5%;
+    top: 69%;
     left: 37.5%;
     display: flex;
     gap: 10px;
-    height: 10%;
+    height: 9%;
     width: 27%;
 }
 
 .expiration-date select {
-    width: 45%;
+    font-size: 16px;
     padding: 8px;
-    border: none;
-    font-size: 12px;
-    background-color: white;
-    color: black;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    width: 60px;
+    height: 32px;
+    text-align: center;
+    appearance: none;
+}
+
+.expiration-date select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
     outline: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .btn-submit {
-    margin-top: 20px;
+    margin-top: 60px;
     padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
@@ -782,3 +779,27 @@ p {
 #totalprice {
     color: black;
 }
+
+#delivery-address {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 5px;
+}
+
+#delivery-address:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+label[for="delivery-address"] {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+

@@ -49,6 +49,7 @@
 ---
 
 ## Testing
+https://github.com/MaksimTse/SolShop
 - **Unit Tests**: Verify the add/remove functionality in the cart.
 - **Automated UI Testing**: Use Cypress for testing.
 
